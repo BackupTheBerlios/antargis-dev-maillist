@@ -1,0 +1,420 @@
+From maximinus at gmail.com  Thu Apr 20 00:39:48 2006
+From: maximinus at gmail.com (Chris Smith)
+Date: Wed, 19 Apr 2006 18:39:48 -0400
+Subject: [Antargis-dev] New developer offer
+Message-ID: <e41aa83c0604191539sb930008pcf692fc2be3af26c@mail.gmail.com>
+
+Consider yourself as having another developer on your game.
+
+I have been looking for a project to join for a simple reason: no-one has
+joined mine, and 1 developer on their own ends up hitting a brick wall
+eventually. I've decided to help you out because of an experience I had on
+sourceforge. All the 'developer wanted' posts I was scanning were by people
+in the planning or alpha stages of a project. This generally pans out to
+'can you program my idea for me?' requests. Not my idea of fun. You at least
+have dedicated some time to your project, and that gets my respect. Since I
+have built up projects by myself, I truly understand the amount of hard work
+that is involved. You at least seem prepared to put the work in, I'm going
+to do my best to help out.
+
+However, I must be honest and say that I come with some baggage. I probably
+won't like your coding style, and I'll keep bitching that you used ruby
+instead of python. However, some level of conflict is in some ways good,
+after all the more coders that comment on your code the better it will
+become. I'll also say that I'm also lazy in a funny way - I tend to work in
+bursts, so you may see a lot of code 1 month and hardly any the next - hey,
+life gets in the way sometimes!
+
+One more thing you'll need to know is my skills. I primarily code in C/C++,
+Python, Perl and assembly language. I have experience with SDL, and I've
+covered the first 10 or so chapters of Nehe's opengl tutorials (i.e. I know
+almost bugger all real opengl). I do have the philosophy that any decent
+coder can learn a language/lib in a few weeks.  I'm ok with designing some
+2d graphics, and I'm not too bad at 3d graphics (I used to use 3DMax, now I
+use Blender). I work in a GNU/Linux system, the distro I use is Ubuntu 5.10.
+I'm also a musician to some degree (I'm in a band,
+http://www.cosmiccharlies.co.uk/), so I'd be prepared to write some music
+for the game.
+
+Well, that's enough ranting for now. I've downloaded what I can, and will
+spend the next few days looking through the code etc... I'll probably start
+by sending you some new graphics/3d models/music or somesuch unti I've
+worked out how the code works. Until then, perhaps you could help me out in
+some way by detailing some of the structure of the code (in fact, that's an
+idea, perhaps I could do that myself and add to the wiki for future
+developers).
+
+One more thing - your website is currently fskd, in that the datbase
+powering them does not seem to work, which is why I had to respond to the
+mailing list - I couldn't find a decent email address to write to. Anyhow,
+here's to Antargis - let's make it a great game!
+
+Chris (aka Sparky from the Linux game tome)
+
+--
+Science is open source religion
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/antargis-dev/attachments/20060419/ad34d1c0/attachment.html>
+
+From david.kamphausen at web.de  Thu Apr 20 09:20:36 2006
+From: david.kamphausen at web.de (David Kamphausen)
+Date: Thu, 20 Apr 2006 09:20:36 +0200
+Subject: [Antargis-dev] New developer offer
+In-Reply-To: <e41aa83c0604191539sb930008pcf692fc2be3af26c@mail.gmail.com>
+References: <e41aa83c0604191539sb930008pcf692fc2be3af26c@mail.gmail.com>
+Message-ID: <200604200920.37692.david.kamphausen@web.de>
+
+This mail is even longer than yours ;-)
+
+Am Donnerstag, 20. April 2006 00:39 schrieb Chris Smith:
+> Consider yourself as having another developer on your game.
+:-D !!!
+
+> I have been looking for a project to join for a simple reason: no-one has
+> joined mine, and 1 developer on their own ends up hitting a brick wall
+> eventually. I've decided to help you out because of an experience I had on
+> sourceforge. All the 'developer wanted' posts I was scanning were by people
+> in the planning or alpha stages of a project. This generally pans out to
+> 'can you program my idea for me?' requests. Not my idea of fun. 
+and they'll stick to their pre-alpha-stage until they get abandoned...
+
+> However, I must be honest and say that I come with some baggage. I probably
+> won't like your coding style, and I'll keep bitching that you used ruby
+> instead of python. However, some level of conflict is in some ways good,
+> after all the more coders that comment on your code the better it will
+> become. I'll also say that I'm also lazy in a funny way - I tend to work in
+> bursts, so you may see a lot of code 1 month and hardly any the next - hey,
+> life gets in the way sometimes!
+ok, this seams as it will be fun :-)
+There were times when BoA slept for some weeks, too. And yes, my code isn't 
+that fine - there is much to be done about this, though I tried to review it 
+a little before 0.1 release.
+
+> One more thing you'll need to know is my skills. I primarily code in C/C++,
+> Python, Perl and assembly language. I have experience with SDL, and I've
+> covered the first 10 or so chapters of Nehe's opengl tutorials (i.e. I know
+> almost bugger all real opengl). I do have the philosophy that any decent
+> coder can learn a language/lib in a few weeks.  I'm ok with designing some
+> 2d graphics, and I'm not too bad at 3d graphics (I used to use 3DMax, now I
+> use Blender). I work in a GNU/Linux system, the distro I use is Ubuntu
+> 5.10. I'm also a musician to some degree (I'm in a band,
+> http://www.cosmiccharlies.co.uk/), so I'd be prepared to write some music
+> for the game.
+That's very nice to have someone, who can do (nearly) everything :-)
+BTW your game looks very nice, too. Shouldn't be abandoned at all. Maybe
+you should try to promote it a little for GotM ? Though GotM seems to be 
+pretty much dead after windstille.
+
+> Well, that's enough ranting for now. I've downloaded what I can, and will
+> spend the next few days looking through the code etc... I'll probably start
+> by sending you some new graphics/3d models/music or somesuch unti I've
+> worked out how the code works. Until then, perhaps you could help me out in
+> some way by detailing some of the structure of the code (in fact, that's an
+> idea, perhaps I could do that myself and add to the wiki for future
+> developers).
+As the wiki is quiet dead ATM, I'll try to give you some rough description:
+The basis of the project is a self-written GUI-library (gui/src/*), that runs 
+on either SDL- and OpenGL-mode. It has the typical structure (ParaGUI,Qt):
+* widgets
+* an AGApplication class doing the main-loop
+* some very simple message-passing-system
+* xml-based layouts, examples are in data/gui/layout/*.xml
+* some simple theming; look at data/theme.xml
+Rendering is done through a AGPainter-class, that then does delegate its work 
+to the current PaintTarget (rendering device).
+
+The message passing system is some ugly self-written thingy, which runs more 
+or less seamless through c++ and ruby. Libsigc++ made many problems with 
+swig, so I left it, same for ParaGUI's implementation.
+
+Then there is a real small 3d-engine consisting of:
+* a scenegraph (src/scene.h), using quadtree.h
+* a scenenodes (src/scenenode.h)
+* static meshes (src/mesh.h and src/mesh_data.h)
+* animated meshes (src/anim_mesh.h and src/anim_mesh_data.h), uses 
+glsl-shaders if available
+* some very rudimentary particles (src/smoke.h)
+* stuff more stuff like (broken) decals
+
+The game-engine (C++) is done in 3 stages:
+* a map (src/map.h), which contains all the entities in a quadtree
+* entities (src/entity.h), which represent game-objects. These can have 0 to 
+any meshes.
+* each entity can have a low-level job. Those are defined in job.h.
+Nearly everything is exposed to ruby. Functions and classes that are used very 
+often (low-level jobs) are not.
+Anything else is done in ruby - so much for rapid development.
+
+As for the actual game, any entity-type has its own class which is derived 
+from AntEntity. This ruby-scripts are all places in (ruby/*).
+Heroes and Houses can have high-level jobs (ruby/ant_hljobs.rb).
+That's it for a rough overview, I think. 
+
+Some words on ruby or scripting on the whole:
+I started this project using LUA and luabind, but I really missed a nice 
+syntax for classes and the binding was a hell. So I abandonded it and 
+embraced ruby with swig, because of its seemingly easiness. After writing a 
+real big load of code I got into problems with the garbage collector (GC).
+These were solved by some self-written extensions to the swig-processing.
+There are still some speed drawbacks with the GC. But I think they are minor.
+Maybe it had been better to choose python due to its refcounting GC - don't 
+know. However it would be a real pain to port all this stuff...
+
+> One more thing - your website is currently fskd, in that the datbase
+> powering them does not seem to work, which is why I had to respond to the
+> mailing list - I couldn't find a decent email address to write to. Anyhow,
+> here's to Antargis - let's make it a great game!
+Yes, I know. Berlios have crashed their db-server. This concerns various 
+projects (lincity,supertux...), I hope they'll fix it soon and have not 
+destroyed the data, as I have not yet done any backups :-(. This will be the 
+first thing for me to do after the server comes up again.
+
+If you want to get an impression on what's to do ATM or what I'm doing have a 
+look at SVN's TODO and the commit-mailing-list. The SVN version is currently 
+a little faster than 0.1.1 release, so you might try this one. Descriptions 
+on that are on the Download page 
+http://antargis.berlios.de/index.php?page=download
+
+Welcome on board!
+
+David (Godrin)
+
+
+From cyril.brulebois at enst-bretagne.fr  Sun Apr 23 17:13:29 2006
+From: cyril.brulebois at enst-bretagne.fr (Cyril Brulebois)
+Date: Sun, 23 Apr 2006 17:13:29 +0200
+Subject: [Antargis-dev] Some suggestions
+Message-ID: <20060423151329.GA21814@evy>
+
+Hi,
+
+I'd like to suggest some bits:
+ - eventually setup an IRC channel (e.g. on freenode or oftc);
+ - gather all contact infos on the "People" wiki page (which could be
+   renamed to "Contact");
+ - have a jabber account if you're not on IRC, that's sometimes more
+   friendly to send some lines over an IM account than having to
+   elaborate a mail. Jabber's growing and is more and more used across
+   free software developers;
+ - fix the broken link on the download page[1] to the user FAQ;
+ - it could be *very* interesting to have a "no-sound" option; since
+   linux audio modules are sometimes broken (like ATM for me), I cannot
+   run the game. :/ (It could exist already, but I didn't see it in the
+   few docs I found.)
+
+I must confess I found the screenshots very promising, I'm eager to
+testing it. ;-)
+
+(Please Cc: me on reply, I've not (yet) subscribed to the list.)
+
+Cheers,
+
+-- 
+Cyril Brulebois
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/antargis-dev/attachments/20060423/8c33baac/attachment.pgp>
+
+From david.kamphausen at web.de  Sun Apr 23 19:35:36 2006
+From: david.kamphausen at web.de (David Kamphausen)
+Date: Sun, 23 Apr 2006 19:35:36 +0200
+Subject: [Antargis-dev] Some suggestions
+In-Reply-To: <20060423151329.GA21814@evy>
+References: <20060423151329.GA21814@evy>
+Message-ID: <200604231935.36652.david.kamphausen@web.de>
+
+Hi,
+thanks for the feedback! We already have an irc-channel #antargis at 
+freenode.net, but it's not very well frequented yet :-)
+On the People's page in the wiki there are a whole bunch of information how to 
+contact us (mostly ICQ - but now Jabber for me, too). The broken user-FAQ 
+link was my fault. I've added it to soon. The FAQ didn't even exist, because 
+our wiki was down.
+And at last it's a good idea to make a no-sound option. This will be included 
+in the next version!
+
+Bye
+David
+
+
+From cyril.brulebois at enst-bretagne.fr  Sun Apr 23 19:48:44 2006
+From: cyril.brulebois at enst-bretagne.fr (Cyril Brulebois)
+Date: Sun, 23 Apr 2006 19:48:44 +0200
+Subject: [Antargis-dev] Some suggestions
+In-Reply-To: <200604231935.36652.david.kamphausen@web.de>
+References: <20060423151329.GA21814@evy> <200604231935.36652.david.kamphausen@web.de>
+Message-ID: <20060423174844.GB21814@evy>
+
+David Kamphausen <david.kamphausen at web.de> (23/04/2006):
+> Hi,
+Hi,
+
+> thanks for the feedback! We already have an irc-channel #antargis at
+> freenode.net, but it's not very well frequented yet :-) On the
+> People's page in the wiki there are a whole bunch of information how
+> to contact us (mostly ICQ - but now Jabber for me, too). The broken
+> user-FAQ link was my fault. I've added it to soon. The FAQ didn't even
+> exist, because our wiki was down.
+I read that just a bit later, and I then noticed the other tabs on the
+website, sorry for reporting already-existing-things. :-)
+
+> And at last it's a good idea to make a no-sound option. This will be
+> included in the next version!
+Sounds great, I'll keep an eye on it. :-)
+
+Cheers,
+
+-- 
+Cyril
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/antargis-dev/attachments/20060423/b3284007/attachment.pgp>
+
+From david.kamphausen at web.de  Sun Apr 23 21:44:51 2006
+From: david.kamphausen at web.de (David Kamphausen)
+Date: Sun, 23 Apr 2006 21:44:51 +0200
+Subject: [Antargis-dev] Some suggestions
+In-Reply-To: <20060423174844.GB21814@evy>
+References: <20060423151329.GA21814@evy> <200604231935.36652.david.kamphausen@web.de> <20060423174844.GB21814@evy>
+Message-ID: <200604232144.51280.david.kamphausen@web.de>
+
+Ok, there's support for disabling sound in SVN now.
+You can disable it by editing your ~/.Antargis/config.xml
+file, so that is looks like this:
+<config>
+  <option name="soundEnabled" value="false"/>
+</config>
+and then running the game.  I'll add a command-line thingy soon.
+
+
+From cyril.brulebois at enst-bretagne.fr  Sun Apr 23 22:57:31 2006
+From: cyril.brulebois at enst-bretagne.fr (Cyril Brulebois)
+Date: Sun, 23 Apr 2006 22:57:31 +0200
+Subject: [Antargis-dev] Some suggestions
+In-Reply-To: <200604232144.51280.david.kamphausen@web.de>
+References: <20060423151329.GA21814@evy> <200604231935.36652.david.kamphausen@web.de> <20060423174844.GB21814@evy> <200604232144.51280.david.kamphausen@web.de>
+Message-ID: <20060423205731.GB32218@evy>
+
+David Kamphausen <david.kamphausen at web.de> (23/04/2006):
+> Ok, there's support for disabling sound in SVN now.
+Thanks for having done that so quickly. :-)
+The following is about r772.
+
+> You can disable it by editing your ~/.Antargis/config.xml
+That's the first time I see a dotfile with capital(s). :-) (If I don't
+count .ICEauthority)
+
+> and then running the game.  I'll add a command-line thingy soon.
+I ran 'rake' and got:
+> Config cached! - remove 'config.rb' or 'rake clean' to clear cache
+> 
+> rake aborted!
+> Don't know how to build task 'src/swig.cc'
+
+so I cleaned and recompiled, and got the same error about src/swig.cc
+I tried to "touch" it, compiling was then successful, but when trying to
+run ./run.rb:
+> ./libantargis.so: ./libantargis.so: undefined symbol: Init_libantargis -
+>   ./libantargis.so (LoadError)
+> from ./ruby/antargislib.rb:15
+> from ./ruby/intro.rb:3
+> from ./run.rb:3
+
+To conclude, no need to Cc: me any longer, I subscribed. :-)
+
+Cheers,
+
+-- 
+Cyril
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/antargis-dev/attachments/20060423/c8c99177/attachment.pgp>
+
+From maximinus at gmail.com  Mon Apr 24 00:35:37 2006
+From: maximinus at gmail.com (Chris Smith)
+Date: Sun, 23 Apr 2006 23:35:37 +0100
+Subject: [Antargis-dev] Antargis web page
+Message-ID: <e41aa83c0604231535w2c1a0216hcd3dd5854ae46aa@mail.gmail.com>
+
+Seems like the forums and wiki are back down again :-(
+
+Anyone have any idea what Berlios are up to?
+
+--
+Science is open source religion
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/antargis-dev/attachments/20060423/5486c69f/attachment.html>
+
+From david.kamphausen at web.de  Mon Apr 24 10:24:39 2006
+From: david.kamphausen at web.de (David Kamphausen)
+Date: Mon, 24 Apr 2006 10:24:39 +0200
+Subject: [Antargis-dev] Some suggestions
+In-Reply-To: <20060423205731.GB32218@evy>
+References: <20060423151329.GA21814@evy> <200604232144.51280.david.kamphausen@web.de> <20060423205731.GB32218@evy>
+Message-ID: <200604241024.39707.david.kamphausen@web.de>
+
+You have to install swig, if you want to use current SVN.
+When you've done so, run a
+$ rake clean
+$ rake
+Then it should run :-)
+
+
+
+From david.kamphausen at web.de  Mon Apr 24 10:30:39 2006
+From: david.kamphausen at web.de (David Kamphausen)
+Date: Mon, 24 Apr 2006 10:30:39 +0200
+Subject: [Antargis-dev] Antargis web page
+In-Reply-To: <e41aa83c0604231535w2c1a0216hcd3dd5854ae46aa@mail.gmail.com>
+References: <e41aa83c0604231535w2c1a0216hcd3dd5854ae46aa@mail.gmail.com>
+Message-ID: <200604241030.39946.david.kamphausen@web.de>
+
+Am Montag, 24. April 2006 00:35 schrieb Chris Smith:
+> Seems like the forums and wiki are back down again :-(
+>
+> Anyone have any idea what Berlios are up to?
+No idea, but it seems like they've solved it. Now it runs again.
+I hope it lasts some longer now...
+
+
+From siotopo at gmail.com  Sat Apr 29 23:29:53 2006
+From: siotopo at gmail.com (siotopo)
+Date: Sat, 29 Apr 2006 23:29:53 +0200
+Subject: [Antargis-dev] Some changes to antargis/data/campaign
+Message-ID: <1146346193.10103.2.camel@localhost>
+
+Hi
+
+I think these changes in the text would be nice.
+
+
+bye
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: birth.xml
+Type: text/xml
+Size: 618 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/antargis-dev/attachments/20060429/01f331cf/attachment.xml>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: tutorial.xml
+Type: text/xml
+Size: 1058 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/antargis-dev/attachments/20060429/01f331cf/attachment-0001.xml>
+

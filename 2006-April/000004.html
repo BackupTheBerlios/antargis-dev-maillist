@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Antargis-dev] New developer offer
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/antargis-dev/2006-April/index.html" >
+   <LINK REL="made" HREF="mailto:antargis-dev%40lists.berlios.de?Subject=Re%3A%20%5BAntargis-dev%5D%20New%20developer%20offer&In-Reply-To=%3C200604200920.37692.david.kamphausen%40web.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000003.html">
+   <LINK REL="Next"  HREF="000005.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Antargis-dev] New developer offer</H1>
+    <B>David Kamphausen</B> 
+    <A HREF="mailto:antargis-dev%40lists.berlios.de?Subject=Re%3A%20%5BAntargis-dev%5D%20New%20developer%20offer&In-Reply-To=%3C200604200920.37692.david.kamphausen%40web.de%3E"
+       TITLE="[Antargis-dev] New developer offer">david.kamphausen at web.de
+       </A><BR>
+    <I>Thu Apr 20 09:20:36 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000003.html">[Antargis-dev] New developer offer
+</A></li>
+        <LI>Next message: <A HREF="000005.html">[Antargis-dev] Some suggestions
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#4">[ date ]</a>
+              <a href="thread.html#4">[ thread ]</a>
+              <a href="subject.html#4">[ subject ]</a>
+              <a href="author.html#4">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>This mail is even longer than yours ;-)
+
+Am Donnerstag, 20. April 2006 00:39 schrieb Chris Smith:
+&gt;<i> Consider yourself as having another developer on your game.
+</I>:<i>-D !!!
+</I>
+&gt;<i> I have been looking for a project to join for a simple reason: no-one has
+</I>&gt;<i> joined mine, and 1 developer on their own ends up hitting a brick wall
+</I>&gt;<i> eventually. I've decided to help you out because of an experience I had on
+</I>&gt;<i> sourceforge. All the 'developer wanted' posts I was scanning were by people
+</I>&gt;<i> in the planning or alpha stages of a project. This generally pans out to
+</I>&gt;<i> 'can you program my idea for me?' requests. Not my idea of fun. 
+</I>and they'll stick to their pre-alpha-stage until they get abandoned...
+
+&gt;<i> However, I must be honest and say that I come with some baggage. I probably
+</I>&gt;<i> won't like your coding style, and I'll keep bitching that you used ruby
+</I>&gt;<i> instead of python. However, some level of conflict is in some ways good,
+</I>&gt;<i> after all the more coders that comment on your code the better it will
+</I>&gt;<i> become. I'll also say that I'm also lazy in a funny way - I tend to work in
+</I>&gt;<i> bursts, so you may see a lot of code 1 month and hardly any the next - hey,
+</I>&gt;<i> life gets in the way sometimes!
+</I>ok, this seams as it will be fun :-)
+There were times when BoA slept for some weeks, too. And yes, my code isn't 
+that fine - there is much to be done about this, though I tried to review it 
+a little before 0.1 release.
+
+&gt;<i> One more thing you'll need to know is my skills. I primarily code in C/C++,
+</I>&gt;<i> Python, Perl and assembly language. I have experience with SDL, and I've
+</I>&gt;<i> covered the first 10 or so chapters of Nehe's opengl tutorials (i.e. I know
+</I>&gt;<i> almost bugger all real opengl). I do have the philosophy that any decent
+</I>&gt;<i> coder can learn a language/lib in a few weeks.  I'm ok with designing some
+</I>&gt;<i> 2d graphics, and I'm not too bad at 3d graphics (I used to use 3DMax, now I
+</I>&gt;<i> use Blender). I work in a GNU/Linux system, the distro I use is Ubuntu
+</I>&gt;<i> 5.10. I'm also a musician to some degree (I'm in a band,
+</I>&gt;<i> <A HREF="http://www.cosmiccharlies.co.uk/">http://www.cosmiccharlies.co.uk/</A>), so I'd be prepared to write some music
+</I>&gt;<i> for the game.
+</I>That's very nice to have someone, who can do (nearly) everything :-)
+BTW your game looks very nice, too. Shouldn't be abandoned at all. Maybe
+you should try to promote it a little for GotM ? Though GotM seems to be 
+pretty much dead after windstille.
+
+&gt;<i> Well, that's enough ranting for now. I've downloaded what I can, and will
+</I>&gt;<i> spend the next few days looking through the code etc... I'll probably start
+</I>&gt;<i> by sending you some new graphics/3d models/music or somesuch unti I've
+</I>&gt;<i> worked out how the code works. Until then, perhaps you could help me out in
+</I>&gt;<i> some way by detailing some of the structure of the code (in fact, that's an
+</I>&gt;<i> idea, perhaps I could do that myself and add to the wiki for future
+</I>&gt;<i> developers).
+</I>As the wiki is quiet dead ATM, I'll try to give you some rough description:
+The basis of the project is a self-written GUI-library (gui/src/*), that runs 
+on either SDL- and OpenGL-mode. It has the typical structure (ParaGUI,Qt):
+* widgets
+* an AGApplication class doing the main-loop
+* some very simple message-passing-system
+* xml-based layouts, examples are in data/gui/layout/*.xml
+* some simple theming; look at data/theme.xml
+Rendering is done through a AGPainter-class, that then does delegate its work 
+to the current PaintTarget (rendering device).
+
+The message passing system is some ugly self-written thingy, which runs more 
+or less seamless through c++ and ruby. Libsigc++ made many problems with 
+swig, so I left it, same for ParaGUI's implementation.
+
+Then there is a real small 3d-engine consisting of:
+* a scenegraph (src/scene.h), using quadtree.h
+* a scenenodes (src/scenenode.h)
+* static meshes (src/mesh.h and src/mesh_data.h)
+* animated meshes (src/anim_mesh.h and src/anim_mesh_data.h), uses 
+glsl-shaders if available
+* some very rudimentary particles (src/smoke.h)
+* stuff more stuff like (broken) decals
+
+The game-engine (C++) is done in 3 stages:
+* a map (src/map.h), which contains all the entities in a quadtree
+* entities (src/entity.h), which represent game-objects. These can have 0 to 
+any meshes.
+* each entity can have a low-level job. Those are defined in job.h.
+Nearly everything is exposed to ruby. Functions and classes that are used very 
+often (low-level jobs) are not.
+Anything else is done in ruby - so much for rapid development.
+
+As for the actual game, any entity-type has its own class which is derived 
+from AntEntity. This ruby-scripts are all places in (ruby/*).
+Heroes and Houses can have high-level jobs (ruby/ant_hljobs.rb).
+That's it for a rough overview, I think. 
+
+Some words on ruby or scripting on the whole:
+I started this project using LUA and luabind, but I really missed a nice 
+syntax for classes and the binding was a hell. So I abandonded it and 
+embraced ruby with swig, because of its seemingly easiness. After writing a 
+real big load of code I got into problems with the garbage collector (GC).
+These were solved by some self-written extensions to the swig-processing.
+There are still some speed drawbacks with the GC. But I think they are minor.
+Maybe it had been better to choose python due to its refcounting GC - don't 
+know. However it would be a real pain to port all this stuff...
+
+&gt;<i> One more thing - your website is currently fskd, in that the datbase
+</I>&gt;<i> powering them does not seem to work, which is why I had to respond to the
+</I>&gt;<i> mailing list - I couldn't find a decent email address to write to. Anyhow,
+</I>&gt;<i> here's to Antargis - let's make it a great game!
+</I>Yes, I know. Berlios have crashed their db-server. This concerns various 
+projects (lincity,supertux...), I hope they'll fix it soon and have not 
+destroyed the data, as I have not yet done any backups :-(. This will be the 
+first thing for me to do after the server comes up again.
+
+If you want to get an impression on what's to do ATM or what I'm doing have a 
+look at SVN's TODO and the commit-mailing-list. The SVN version is currently 
+a little faster than 0.1.1 release, so you might try this one. Descriptions 
+on that are on the Download page 
+<A HREF="http://antargis.berlios.de/index.php?page=download">http://antargis.berlios.de/index.php?page=download</A>
+
+Welcome on board!
+
+David (Godrin)
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000003.html">[Antargis-dev] New developer offer
+</A></li>
+	<LI>Next message: <A HREF="000005.html">[Antargis-dev] Some suggestions
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#4">[ date ]</a>
+              <a href="thread.html#4">[ thread ]</a>
+              <a href="subject.html#4">[ subject ]</a>
+              <a href="author.html#4">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/antargis-dev">More information about the Antargis-dev
+mailing list</a><br>
+</body></html>

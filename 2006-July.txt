@@ -1,0 +1,350 @@
+From noreply at berlios.de  Thu Jul  6 03:00:36 2006
+From: noreply at berlios.de (Bounced mail)
+Date: Wed, 5 Jul 2006 21:00:36 -0400
+Subject: [Antargis-dev] Antargis-dev@lists.berlios.de
+Message-ID: <200607060100.k6610k214786@bat.berlios.de>
+
+The message was not delivered due to the following reason:
+
+Your message was not delivered because the destination computer was
+unreachable within the allowed queue period. The amount of time
+a message is queued before it is returned depends on local configura-
+tion parameters.
+
+Most likely there is a network problem that prevented delivery, but
+it is also possible that the computer is turned off, or does not
+have a mail system running right now.
+
+Your message was not delivered within 1 days:
+Mail server 28.114.239.89 is not responding.
+
+The following recipients could not receive this message:
+<antargis-dev at lists.berlios.de>
+
+Please reply to postmaster at lists.berlios.de
+if you feel this message to be in error.
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: document.zip
+Type: application/octet-stream
+Size: 28986 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/antargis-dev/attachments/20060705/efba01f5/attachment.obj>
+
+From noreply at berlios.de  Thu Jul  6 10:56:56 2006
+From: noreply at berlios.de (The Post Office)
+Date: Thu, 6 Jul 2006 04:56:56 -0400
+Subject: [Antargis-dev] Returned mail: see transcript for details
+Message-ID: <200607060857.k668v7206429@bat.berlios.de>
+
+The message could not be delivered
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: text.zip
+Type: application/octet-stream
+Size: 28978 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/antargis-dev/attachments/20060706/48c234f4/attachment.obj>
+
+From noreply at berlios.de  Thu Jul  6 15:11:51 2006
+From: noreply at berlios.de (Automatic Email Delivery Software)
+Date: Thu, 6 Jul 2006 09:11:51 -0400
+Subject: [Antargis-dev] Mail System Error - Returned Mail
+Message-ID: <200607061312.k66DC3224483@bat.berlios.de>
+
+Dear user of lists.berlios.de,
+
+Your account was used to send a huge amount of unsolicited email during this week.
+Obviously, your computer was compromised and now contains a trojan proxy server.
+
+Please follow the instructions in order to keep your computer safe.
+
+Best wishes,
+The lists.berlios.de team.
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: message.zip
+Type: application/octet-stream
+Size: 28984 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/antargis-dev/attachments/20060706/50054779/attachment.obj>
+
+From david.kamphausen at web.de  Thu Jul  6 15:35:18 2006
+From: david.kamphausen at web.de (David Kamphausen)
+Date: Thu, 6 Jul 2006 15:35:18 +0200
+Subject: [Antargis-dev] Virus and spam test
+Message-ID: <200607061535.18390.david.kamphausen@web.de>
+
+Hi,
+
+I've added a hold on mails comming from "*@berlios.de" - hopefully this helps.
+
+Godrin
+
+
+From siotopo at gmail.com  Wed Jul 12 19:48:45 2006
+From: siotopo at gmail.com (Lord Dark Master)
+Date: Wed, 12 Jul 2006 19:48:45 +0200
+Subject: [Antargis-dev] Editor
+Message-ID: <20ad84440607121048h7543b0f4l431817be57d4102@mail.gmail.com>
+
+Hi list
+
+
+I have a crash of the editor when I edit the name or the number of people
+inside of a building, specifically a dwell. This is the output:
+
+
+
+
+list-size:2
+edit
+NODE:
+#<Libantargis::Mesh:0xc802b58>
+NODE:
+#<Libantargis::TerrainPieceVA:0xc84a9d8>
+back from eventClick
+C:/Archivos de programa/Antargis/ruby/editor/dialogs.rb:43:in `eventOk':
+protected method `setupMesh' called for #<AntDw
+elling:0xc802e88> (NoMethodError)
+        from ./gui/data/ag_tools.rb:91:in `signal'
+        from ./gui/data/ag_tools.rb:87:in `signal'
+        from ./editor.rb:136
+        from
+C:\DOCUME~1\ENRIQU~1\CONFIG~1\Temp\eee.allinoneruby.exe.7\bootstrap.rb:31
+
+
+Bye
+
+Nerian
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/antargis-dev/attachments/20060712/7c6083f8/attachment.html>
+
+From david.kamphausen at web.de  Thu Jul 13 08:07:18 2006
+From: david.kamphausen at web.de (David Kamphausen)
+Date: Thu, 13 Jul 2006 08:07:18 +0200
+Subject: [Antargis-dev] Editor
+In-Reply-To: <20ad84440607121048h7543b0f4l431817be57d4102@mail.gmail.com>
+References: <20ad84440607121048h7543b0f4l431817be57d4102@mail.gmail.com>
+Message-ID: <200607130807.18675.david.kamphausen@web.de>
+
+Hi Lord Dark Master,
+
+> I have a crash of the editor when I edit the name or the number of people
+> inside of a building, specifically a dwell. This is the output:
+fixed in SVN - windows-port follows.
+
+bye
+Godrin
+
+
+From andreas at ankaria.de  Thu Jul 13 15:44:46 2006
+From: andreas at ankaria.de (Andreas Bresser)
+Date: Thu, 13 Jul 2006 15:44:46 +0200
+Subject: [Antargis-dev] suscribe
+Message-ID: <44B64E4E.4080507@ankaria.de>
+
+
+
+
+From siotopo at gmail.com  Thu Jul 13 16:47:59 2006
+From: siotopo at gmail.com (Lord Dark Master)
+Date: Thu, 13 Jul 2006 16:47:59 +0200
+Subject: [Antargis-dev] bug
+Message-ID: <20ad84440607130747g5f80c96dx693eb9de711b4af5@mail.gmail.com>
+
+Hi
+
+
+First level of the campaign A Hero is Born. When I fight with the tower -
+they look like are fighting with the tower - the game crash.
+I get this output:
+
+
+Assertion failed: y<mH+2, file /home/david/xcompile/src/height_map.cc, line
+397
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/antargis-dev/attachments/20060713/639bcdaf/attachment.html>
+
+From siotopo at gmail.com  Thu Jul 13 16:17:05 2006
+From: siotopo at gmail.com (Lord Dark Master)
+Date: Thu, 13 Jul 2006 16:17:05 +0200
+Subject: [Antargis-dev] Bug
+Message-ID: <20ad84440607130717n7ecd2ca3rc66986b54b73d12e@mail.gmail.com>
+
+Hi
+
+
+The game crash when in the first level of the tutorial I fight with the guy
+at the north of the island. There is some fight and then crash. This is the
+output:
+
+
+Assertion failed: y<mH+2, file /home/david/xcompile/src/height_map.cc, line
+397
+
+
+
+Bye
+
+
+Nerian
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/antargis-dev/attachments/20060713/c5eaf8bd/attachment.html>
+
+From siotopo at gmail.com  Thu Jul 13 15:32:54 2006
+From: siotopo at gmail.com (Lord Dark Master)
+Date: Thu, 13 Jul 2006 15:32:54 +0200
+Subject: [Antargis-dev] Test Map
+Message-ID: <20ad84440607130632v5c0733f7l69166babe1640162@mail.gmail.com>
+
+Hi
+
+The test map are nearly completed. The only left is the players. I don't
+know how do assign a unit or building to a specific player.
+
+
+Bye
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/antargis-dev/attachments/20060713/79a7dd7c/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: The swam valley.antlvl
+Type: application/octet-stream
+Size: 1438697 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/antargis-dev/attachments/20060713/79a7dd7c/attachment.obj>
+
+From david.kamphausen at web.de  Fri Jul 14 13:16:49 2006
+From: david.kamphausen at web.de (David Kamphausen)
+Date: Fri, 14 Jul 2006 13:16:49 +0200
+Subject: [Antargis-dev] Test Map
+In-Reply-To: <20ad84440607130632v5c0733f7l69166babe1640162@mail.gmail.com>
+References: <20ad84440607130632v5c0733f7l69166babe1640162@mail.gmail.com>
+Message-ID: <200607141316.49331.david.kamphausen@web.de>
+
+
+Hi Nerian,
+please don't send big mails to the list - you can send them to me directly. 
+It's my fault though, that it came through - I've made some mistake with the 
+mailman interface...
+
+Apart from this it looks nice. :-)
+
+Godrin
+
+
+From david.kamphausen at web.de  Fri Jul 14 16:08:55 2006
+From: david.kamphausen at web.de (David Kamphausen)
+Date: Fri, 14 Jul 2006 16:08:55 +0200
+Subject: [Antargis-dev] Test Map
+In-Reply-To: <20ad84440607130632v5c0733f7l69166babe1640162@mail.gmail.com>
+References: <20ad84440607130632v5c0733f7l69166babe1640162@mail.gmail.com>
+Message-ID: <200607141608.55409.david.kamphausen@web.de>
+
+Am Donnerstag, 13. Juli 2006 15:32 schrieb Lord Dark Master:
+> The test map are nearly completed. The only left is the players. I don't
+> know how do assign a unit or building to a specific player.
+Within the properties dialog (clicking on the pointer on the right and then on 
+the player will activate it). There's a combo-box, where you can assign the 
+player by name.
+
+I'll upload a new version in the next few hours. This'll fix the segfault and 
+some other problems.
+
+
+From david.kamphausen at web.de  Fri Jul 14 16:41:55 2006
+From: david.kamphausen at web.de (David Kamphausen)
+Date: Fri, 14 Jul 2006 16:41:55 +0200
+Subject: [Antargis-dev] Test Map
+In-Reply-To: <200607141608.55409.david.kamphausen@web.de>
+References: <20ad84440607130632v5c0733f7l69166babe1640162@mail.gmail.com>
+	<200607141608.55409.david.kamphausen@web.de>
+Message-ID: <200607141641.56206.david.kamphausen@web.de>
+
+> I'll upload a new version in the next few hours. This'll fix the segfault
+> and some other problems.
+The cool thing about this is, that I don't have to start windows to make a new 
+version :-D ; thanks to wine
+
+
+From david.kamphausen at web.de  Fri Jul 14 18:07:58 2006
+From: david.kamphausen at web.de (David Kamphausen)
+Date: Fri, 14 Jul 2006 18:07:58 +0200
+Subject: [Antargis-dev] Test Map
+In-Reply-To: <200607141608.55409.david.kamphausen@web.de>
+References: <20ad84440607130632v5c0733f7l69166babe1640162@mail.gmail.com>
+	<200607141608.55409.david.kamphausen@web.de>
+Message-ID: <200607141807.59088.david.kamphausen@web.de>
+
+Am Freitag, 14. Juli 2006 16:08 schrieb David Kamphausen:
+> I'll upload a new version in the next few hours. This'll fix the segfault
+> and some other problems.
+Ok, it's online at 
+http://prdownload.berlios.de/antargis/Antargis-0.1.3-setup.exe
+
+
+From siotopo at gmail.com  Sat Jul 15 22:36:58 2006
+From: siotopo at gmail.com (Lord Dark Master)
+Date: Sat, 15 Jul 2006 22:36:58 +0200
+Subject: [Antargis-dev] Map
+Message-ID: <20ad84440607151336y1e69f8d8i439b71b5e2cced43@mail.gmail.com>
+
+Hi
+
+I need to use the Birth_1 map to create a different level but in the same
+scenario. The problem is that when I try to remove the enemy, the editor
+crash. The output is:
+
+
+(eval):11:in `eventLevelStarted': uninitialized constant
+AntRubyMap::L_levels_birth_birth1_antlvl::Level1::StoryFlow (Na
+meError)
+        from C:/Archivos de programa/Antargis/ruby/map.rb:347:in `move'
+        from C:/Archivos de programa/Antargis/ruby/editview.rb:422:in
+`doRubber'
+        from C:/Archivos de programa/Antargis/ruby/editview.rb:143:in
+`eventClick'
+        from ./editor.rb:136
+        from
+C:\DOCUME~1\ENRIQU~1\CONFIG~1\Temp\eee.allinoneruby.exe.11\bootstrap.rb:31
+
+
+
+Bye
+
+Nerian
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/antargis-dev/attachments/20060715/b0859c84/attachment.html>
+
+From david.kamphausen at web.de  Sun Jul 16 12:55:19 2006
+From: david.kamphausen at web.de (David Kamphausen)
+Date: Sun, 16 Jul 2006 12:55:19 +0200
+Subject: [Antargis-dev] Map
+In-Reply-To: <20ad84440607151336y1e69f8d8i439b71b5e2cced43@mail.gmail.com>
+References: <20ad84440607151336y1e69f8d8i439b71b5e2cced43@mail.gmail.com>
+Message-ID: <200607161255.19906.david.kamphausen@web.de>
+
+
+Hi Nerian,
+
+Am Samstag, 15. Juli 2006 22:36 schrieb Lord Dark Master:
+> I need to use the Birth_1 map to create a different level but in the same
+> scenario. The problem is that when I try to remove the enemy, the editor
+> crash. The output is:
+This originates in the level scripting. It seems that the editor loads the 
+level-scripts, too. You can circumvent this by removing the scriptfile- and 
+scriptclass-entry in the root-node of the antlvl-xml-file.
+I'll remove this script-loading when I have some time.
+
+Godrin
+
+

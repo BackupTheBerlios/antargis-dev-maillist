@@ -1,0 +1,74 @@
+From btekbas at gmail.com  Sat Feb 18 19:36:23 2006
+From: btekbas at gmail.com (burhan tekbas)
+Date: Sat, 18 Feb 2006 20:36:23 +0200
+Subject: [Antargis-dev] =?ISO-8859-9?Q?=DD_want_help_you_for_your_project?=
+Message-ID: <c6ced78d0602181036j1fd3de82tc8a65d0105190e1d@mail.gmail.com>
+
+hello
+
+? am a python programmer and i am learning python.? want join project
+for learning python best.? am from Turkey.? am using linux on my
+computer.
+
+please answer this question.i only want develop something for practise.
+
+
+happy working
+
+
+From david.kamphausen at web.de  Sun Feb 19 10:58:15 2006
+From: david.kamphausen at web.de (David Kamphausen)
+Date: Sun, 19 Feb 2006 10:58:15 +0100
+Subject: [Antargis-dev] =?iso-8859-9?q?=DD_want_help_you_for_your?= project
+In-Reply-To: <c6ced78d0602181036j1fd3de82tc8a65d0105190e1d@mail.gmail.com>
+References: <c6ced78d0602181036j1fd3de82tc8a65d0105190e1d@mail.gmail.com>
+Message-ID: <200602191058.15794.david.kamphausen@web.de>
+
+Hello Burhan!
+If you want to help your welcome! But I'm using Ruby instead of Python.
+However there's much to do, as level- and objectscripting.
+So if you want to learn Ruby, too, you can help.
+Further information you can find on http://www.rubycentral.com/book/
+- that's the book I've learned ruby on, whenever in printed form
+
+David
+
+
+From david.kamphausen at web.de  Mon Feb 20 18:58:14 2006
+From: david.kamphausen at web.de (David Kamphausen)
+Date: Mon, 20 Feb 2006 18:58:14 +0100
+Subject: [Antargis-dev] =?utf-8?q?=C4=B0_want_help_you_for_your?= project
+In-Reply-To: <c6ced78d0602200835j3c79486q@mail.gmail.com>
+References: <c6ced78d0602181036j1fd3de82tc8a65d0105190e1d@mail.gmail.com> <200602191058.15794.david.kamphausen@web.de> <c6ced78d0602200835j3c79486q@mail.gmail.com>
+Message-ID: <200602201858.15412.david.kamphausen@web.de>
+
+hi!
+
+There already is an svn-repository. You can download it like this:
+svn checkout svn://svn.berlios.de/antargis/antargis/trunk antargis
+To build it:
+> cd antargis
+> rake
+But you need a bunch of libraries for this. If you are running debian, then 
+you shall at least install:
+libruby1.8-dev (or 1.9)
+swig
+libsdl-image1.2-dev
+libsdl1.2-dev
+libsdl-mixer1.2-dev
+libsge-dev
+libsdl-ttf1.2-dev
+
+The instructions at http://antargis.berlios.de/index.php?page=download are 
+kind a outdated ATM.
+
+If you get stuck or have any problems, just write an email to the list!
+cu
+David
+
+Am Montag, 20. Februar 2006 17:35 schrieben Sie:
+> i am going to work  a bit on ruby.When i learned it enough i will join
+> you.Thank you i am very happy because it will be my first game.And i think
+> you should create a package and create a cvs.? can package for it for you.
+
+
